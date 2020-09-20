@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stile.css">
+    <title>Treino display</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <h2>Logo</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portifólio</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">   
+        <h2>Teste 1!</h2>
+        <nav class="conteudo">
+            <div class="teste1">
+                <img src="sasuke1.jpg">
+            </div>
+            <div class="teste1">
+                <img src="sasuke2.jpeg">
+            </div>
+            <div class="teste1">
+                <img src="sasuke3.jpeg">
+            </div>
+            <div class="teste1">
+                <img src="sasuke2.jpeg">
+            </div>
+            <div class="teste1">
+                <img src="sasuke3.jpeg">
+            </div>
+            <div class="teste1">
+                <img src="sasuke1.jpg">
+            </div>
+        </nav>
+       
+        <nav class="conteudo2">
+            <h2>Teste 2!</h2>
+            <div class="iframe">
+            <iframe class= "iframe-iframe" src="iframe.html" frameborder="0">
+            </div>
+            </iframe>
+        </nav>
+
+        <h2>Poder</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Naruto</th>
+                    <th>Sasuke</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Força</td>
+                    <td>20pts</td>
+                    <td>20pts</td>  
+                </tr>
+                <tr>
+                    <td>Agilidade</td>
+                    <td>20pts</td>
+                    <td>20pts</td>  
+                </tr>
+                <tr>
+                    <td>Inteligência</td>
+                    <td>20pts</td>
+                    <td>20pts</td>  
+                </tr>
+                <tr>
+                    <td>Liderança</td>
+                    <td>20pts</td>
+                    <td>20pts</td>  
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>80Pts</td>
+                    <td>80Pts</td>  
+                </tr>
+            </tbody>
+            <tfoot>  
+            </tfoot>
+        </table>
+
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome: <input type="text" id="nome" placeholder="Digite seu nome" required></label>
+
+            <label for="tel">Telefone: <input type="tel" id="tel" placeholder="(XX) XXXXX-XXXX" required></label>
+
+            <label for="email">E-Mail: <input type="email" id="email" placeholder="Exemplo: seunome@empresa.com" required></label>
+
+            <label for="mensagem">Mensagem:<textarea cols="52" rows="5" placeholder="Deixe sua mensagem..." required></textarea></label>
+
+            <input class="botaoenviar" type="submit" value="Enviar mensagem">
+
+        </form>
+
+        <script>
+
+            var bottons = document.querySelector('.botaoenviar')
+            bottons.addEventListener('mouseenter', dentro);
+            bottons.addEventListener('mouseout', fora);
+            
+            function dentro(){
+            bottons.style.background ='purple'
+            bottons.style.border = '4px solid #ffffff'
+            bottons.style.padding = '15px'
+            bottons.style.transform ='scale(1.1)'
+            
+            }
+            function fora(){
+            bottons.style.background ='#1c1c1c'
+            bottons.style.border = '4px solid #8e07c0'
+            bottons.style.transform ='scale(1)'            
+            }
+
+        </script>
+    
+    </main>
+
+    <footer class="rodape">
+        <h6>Desenvolvido por Denys Aquino &copy;</h6>
+    </footer>
+
+</body>
+</html>
